@@ -1,0 +1,7 @@
+{
+  "name": "chefvision",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
