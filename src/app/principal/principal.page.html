@@ -1,0 +1,86 @@
+<ion-content>
+  <!-- Animación 3D superior -->
+  <div class="animation-container">
+    <lottie-player
+      src="https://assets3.lottiefiles.com/packages/lf20_touohxv0.json"
+      background="transparent"
+      speed="1"
+      style="width: 80%; height: 150px; margin: 0 auto;"
+      loop
+      autoplay>
+    </lottie-player>
+  </div>
+
+  <!-- Sección de recetas -->
+  <section class="recipes-section container mt-4">
+    <h2 class="text-center text-light mb-4">Recetas Listas</h2>
+
+    <div id="recipeCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000">
+      <div class="carousel-inner">
+        <!-- Primera receta -->
+        <div class="carousel-item active">
+          <div class="card recipe-card">
+            <img src="assets/icon/receta1.png" class="card-img-top" alt="Receta 1">
+            <div class="card-body">
+              <h3 class="card-title">Ensalada Fresca</h3>
+              <p class="card-text">Ingredientes: Lechuga, tomate, pepino.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Segunda receta -->
+        <div class="carousel-item">
+          <div class="card recipe-card">
+            <img src="assets/icon/pasta.jpg" class="card-img-top" alt="Receta 2">
+            <div class="card-body">
+              <h3 class="card-title">Pasta Cremosa</h3>
+              <p class="card-text">Ingredientes: Pasta, crema, espinaca.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Tercera receta -->
+        <div class="carousel-item">
+          <div class="card recipe-card">
+            <img src="assets/icon/receta3.png" class="card-img-top" alt="Receta 3">
+            <div class="card-body">
+              <h3 class="card-title">Tacos Mexicanos</h3>
+              <p class="card-text">Ingredientes: Carne, tortillas, guacamole.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Controles -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#recipeCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#recipeCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+  </section>
+
+
+
+  <!-- Botón flotante -->
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+    <ion-fab-button color="primary" (click)="showHelp()">
+      <ion-icon name="help-circle-outline"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+
+  <!-- Barra de navegación personalizada -->
+  <ion-tabs>
+    <ion-tab-bar slot="bottom" class="custom-tab-bar">
+      <ion-tab-button tab="home">
+        <ion-icon name="home-outline"></ion-icon>
+      </ion-tab-button>
+
+      <ion-tab-button tab="camera">
+        <ion-icon name="camera-outline"></ion-icon>
+      </ion-tab-button>
+
+      <ion-tab-button tab="settings">
+        <ion-icon name="settings-outline"></ion-icon>
+      </ion-tab-button>
+    </ion-tab-bar>
+  </ion-tabs>
+</ion-content>
